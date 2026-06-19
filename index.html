@@ -562,7 +562,34 @@ html{
     scroll-behavior:smooth;
 }
 
+/* Update your main button container */
+.hero-buttons {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 20px !important;
+  flex-wrap: wrap !important; 
+  margin-top: 30px !important;
+  position: static !important; 
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+}
 
+/* Force individual buttons to play nice with Flexbox */
+.hero-buttons a, .hero-buttons button {
+  position: static !important;
+  margin: 0 !important;
+}
+
+/* Responsive adjustment for mobile screens */
+@media (max-width: 600px) {
+  .hero-buttons {
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+}
     
 </style>
 </head>
