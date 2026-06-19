@@ -590,6 +590,36 @@ html{
     gap: 15px !important;
   }
 }
+
+/* Update your CTA button container */
+.cta-buttons {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 20px !important;
+  flex-wrap: wrap !important; 
+  margin-top: 30px !important;
+  position: static !important; 
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+}
+
+/* Force individual CTA buttons to play nice with Flexbox */
+.cta-buttons a, .cta-buttons button {
+  position: static !important;
+  margin: 0 !important;
+}
+
+/* Responsive adjustment for mobile screens */
+@media (max-width: 600px) {
+  .cta-buttons {
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+}
+
     
 </style>
 </head>
